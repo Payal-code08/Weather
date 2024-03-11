@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body {
+    align-items: center;
+    background-image: url(background.jpg);
+
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+header {
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2rem;
+    color: rgb(73, 23, 23);
+}
+
+.datetime {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.today {
+    padding: 0.3rem;
+}
+
+.search-box {
+    text-align: center;
+    position: relative;
+    width: 30rem;
+    height: 2.7rem;
+    background: rgb(248, 246, 246);
+    display: flex;
+    border-radius: 2rem;
+    border: 2px solid red;
+    margin: 3rem auto;
+}
+
+.search-box i {
+    position: absolute;
+    padding-left: 1.1rem;
+    padding-top: .5rem;
+    font-size: 25px;
+}
+
+.search-box input {
+    background: transparent;
+    padding-left: 2.6rem;
+    padding-top: 0.5rem;
+    outline: none;
+    font-size: 1.2rem;
+    color: rgb(22, 10, 65);
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    width: 27rem;
+}
+
+.search-box input::placeholder {
+    color: rgb(48, 14, 14);
+    text-transform: capitalize;
+}
+
+.search-box button {
+    position: absolute;
+    right: -0.1rem;
+    width: 4rem;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
+}
+
+
+
+.box1,
+.box2,
+.box3 {
+    box-sizing: border-box;
+    text-align: center;
+    width: 15rem;
+    height: 17rem;
+    background: rgb(115, 140, 146);
+    border-radius: 1.2rem;
+    margin: 1rem;
+
+}
+
+.text {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    color: rgb(43, 10, 49);
+
+}
+
+.box1,
+.box2,
+.box3,
+.not-found {
+    visibility: hidden;
+}
+
+.box1.active,
+.box2.active,
+.box3.active,
+.not-found.active {
+    visibility: visible;
+}
+
+.weather {
+    text-align: center;
+}
+
+.weather img {
+    width: 30%;
+    margin-top: 1.9rem;
+}
+
+.weather .temperature {
+    position: relative;
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+    margin: 1rem 3rem 0 0;
+    color: wheat;
+}
+
+.weather .temperature span {
+    position: absolute;
+    font-size: 1rem;
+    color: wheat;
+}
+
+.weather .description {
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: wheat;
+}
+
+.box1 i,
+.box2 i,
+.box3 i {
+    margin-top: 2.5rem;
+    font-size: 3.5rem;
+    color: rgb(67, 67, 148);
+}
+
+.info-wind {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: wheat;
+}
+
+.info-humidity {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.not-found {
+    position: absolute;
+}
+
+.not-found img {
+    width: 15rem;
+}
+
+.not-found p {
+    font-size: 2rem;
+    margin-top: 1.2rem
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, initial-scale=1.0">
+
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+</head>
+
+<body >
+    
+    <header>
+        <h1>Today's Weather</h1>
+    </header>
+
+    <div class="datetime">
+        <div class="today" id="date"></div>
+        <div class="today" id="day"></div>
+        <div class="today" id="clock">
+            <span id="hrs">00</span>
+            <span>:</span>
+            <span id="min">00</span>
+            <span>:</span>
+            <span id="sec">00</span>
+        </div>
+    </div>
+    <div class="search-box">
+        <i class="fa fa-map-marker"></i>
+        <input type="text" placeholder="Enter Your Location">
+        <button class="bx bx-search-alt-2"></button>
+    </div>
+    <div class="content">
+
+    <div class="container">
+
+          <div class="row">
+            <div class="col">
+                <div class="box1">
+                    <div class="weather-box">
+                        <div class="info-weather">
+                            <div class="weather">
+                                <h6 class="text">Temperature</h6>
+                                <img src="clear.png" alt="">
+                                <p class="temperature">0<span>°C</span></p>
+                                <p class="description">Broken clouds</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box2">
+                    <div class="weather-details">
+                        <div class="wind">
+                            <h6 class="text">Wind Speed</h6>
+                            <i class="bx bx-wind"></i>
+                            <div class="info-wind">
+                                <span>0 km/h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box3">
+                    <div class="weather-details">
+                        <div class="humidity">
+                            <h6 class="text">Humidity</h6>
+                            <i class="bx bx-water"></i>
+                            <div class="info-humidity">
+                                <span>0%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        
+        <div class="not-found">
+            <img src="404.png" alt="">
+            <p>Oops! Location not Found!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
